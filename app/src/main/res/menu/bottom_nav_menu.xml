@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+<!--    <item-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:id="@+id/navigation_history"-->
+<!--        android:icon="@drawable/ic_baseline_history"-->
+<!--        android:title="@string/history" />-->
+
+<!--    <item-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:id="@+id/navigation_schedulle"-->
+<!--        android:icon="@drawable/ic_baseline_calendar_today"-->
+<!--        android:title="@string/schedulle" />-->
+
+<!--    <item-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:id="@+id/navigation_pkb"-->
+<!--        android:icon="@drawable/ic_baseline_directions_car"-->
+<!--        android:title="@string/pkb" />-->
+
+<!--    <item-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:id="@+id/navigation_pemeliharaan"-->
+<!--        android:icon="@drawable/ic_baseline_settings"-->
+<!--        android:title="@string/pemeliharaan" />-->
+
+<!--    <item-->
+<!--        android:iconTint="@color/black"-->
+<!--        android:id="@+id/navigation_kalibrasi"-->
+<!--        android:icon="@drawable/ic_baseline_compare_arrows"-->
+<!--        android:title="@string/kalibrasi" />-->
+
+
+    <item
+        android:iconTint="@color/black"
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_baseline_account_circle"
+        android:title="@string/akun" />
+
+
+
+</menu>

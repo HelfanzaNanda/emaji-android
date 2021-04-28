@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Emaji</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="akun">akun</string>
+    <string name="history">Riwayat</string>
+    <string name="schedulle">Jadwal</string>
+    <string name="pkb">SOP PKB</string>
+    <string name="pemeliharaan">SOP Pemeliharaan</string>
+    <string name="kalibrasi">Kalibrasi</string>
+</resources>
