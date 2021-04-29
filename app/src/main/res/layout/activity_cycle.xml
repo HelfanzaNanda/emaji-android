@@ -14,15 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_below="@id/recycler_view"
-        app:cornerRadius="8dp"
-        android:text="pilih"
-        android:id="@+id/btn_submit_cycles"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
     <ProgressBar
         android:id="@+id/loading"
         android:layout_centerInParent="true"

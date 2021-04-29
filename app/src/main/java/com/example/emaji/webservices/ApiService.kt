@@ -1,10 +1,8 @@
 package com.example.emaji.webservices
 
-import com.example.emaji.models.Cycle
-import com.example.emaji.models.Task
-import com.example.emaji.models.Tool
-import com.example.emaji.models.User
+import com.example.emaji.models.*
 import com.google.gson.annotations.SerializedName
+import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -37,7 +35,14 @@ interface ApiService{
         @Header("Authorization") token : String,
         @Path("cycleId") cycleId : Int,
         @Path("toolId") toolId : Int
-    ) : Call<WrappedListResponse<Task>>
+    ) : Call<WrappedResponse<Task>>
+
+    @Headers("Content-Type: application/json")
+    @POST("tasks/store")
+    fun sendTaskResult(
+        @Header("Authorization") token : String,
+        @Body body: RequestBody
+    ) : Call<WrappedResponse<TaskResult>>
 
 }
 

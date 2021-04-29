@@ -16,3 +16,12 @@ fun Context.AlertRegister(message: String){
         }
     }.show()
 }
+
+fun Context.AlertInfo(message: String){
+    AlertDialog.Builder(this).apply {
+        setMessage(message)
+        setPositiveButton("ya"){dialog, _ ->
+            dialog.dismiss()
+        }
+    }.show()
+}
