@@ -63,6 +63,7 @@
 
 
                         <TextView
+                            android:layout_marginTop="10dp"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="0.6"
                             android:text="Pertanyaan"
@@ -76,6 +77,7 @@
                             android:layout_height="wrap_content">
 
                             <TextView
+                                android:gravity="center"
                                 android:text="Jawaban"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
@@ -87,14 +89,16 @@
                                 android:layout_height="wrap_content">
 
                                 <TextView
+                                    android:layout_gravity="center"
                                     android:layout_weight="0.5"
-                                    android:text="Ya"
+                                    android:text="Baik"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"/>
 
                                 <TextView
+                                    android:gravity="center"
                                     android:layout_weight="0.5"
-                                    android:text="Tidak"
+                                    android:text="Tidak Baik"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"/>
 

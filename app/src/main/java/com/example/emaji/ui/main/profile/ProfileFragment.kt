@@ -9,6 +9,8 @@ import androidx.lifecycle.Observer
 import com.example.emaji.R
 import com.example.emaji.models.User
 import com.example.emaji.ui.login.LoginActivity
+import com.example.emaji.ui.update_password.UpdatePasswordActivity
+import com.example.emaji.ui.update_profile.UpdateProfileActivity
 import com.example.emaji.utils.Constants
 import com.example.emaji.utils.ext.gone
 import com.example.emaji.utils.ext.showToast
@@ -43,8 +45,15 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     }
 
     private fun goToActivity() {
-        requireView().btn_update_profile.setOnClickListener {
+        requireView().btn_update_password.setOnClickListener {
+            startActivity(Intent(requireActivity(), UpdatePasswordActivity::class.java))
+        }
+    }
 
+    private fun goToUpdateProfile(user: User){
+        requireView().btn_update_profile.setOnClickListener {
+            startActivity(Intent(requireActivity(), UpdateProfileActivity::class.java)
+                    .putExtra("USER", user))
         }
     }
 
@@ -62,6 +71,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             requireView().profile_name.text = it.name
             requireView().profile_email.text = it.email
             requireView().profile_role.text = it.role
+            goToUpdateProfile(it)
         }
     }
 

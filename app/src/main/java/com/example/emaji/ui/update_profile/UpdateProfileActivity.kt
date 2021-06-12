@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.example.emaji.R
+import com.example.emaji.models.User
 import com.example.emaji.utils.Constants
 import com.example.emaji.utils.ext.gone
 import com.example.emaji.utils.ext.showToast
@@ -62,6 +63,7 @@ class UpdateProfileActivity : AppCompatActivity() {
 
     private fun handleSuccess() {
         finish()
+        showToast("berhasil update profile")
     }
 
     private fun handleLoading(state: Boolean) {
@@ -71,4 +73,18 @@ class UpdateProfileActivity : AppCompatActivity() {
 
     private fun setErrorName(err : String?) { error_name.error = err }
     private fun setErrorEmail(err : String?) { error_email.error = err }
+
+    private fun getPassedUser() = intent.getParcelableExtra<User>("USER")
+
+    private fun setUpField(){
+        getPassedUser()?.let {
+            input_name.setText(it.name)
+            input_email.setText(it.email)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setUpField()
+    }
 }
